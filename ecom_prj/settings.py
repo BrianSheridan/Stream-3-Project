@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'cart',
     'payments',
     'catagories',
-    'blog'
+    'blog',
+    'disqus',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
