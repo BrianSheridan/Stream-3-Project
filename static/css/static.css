@@ -1,0 +1,77 @@
+body{
+    background-image: url("../../static/media/images/sg.jpg");
+    background-size: cover;
+}
+
+
+
+
+h1, .h1 {
+    font-size: 36px;
+    text-align: left;
+    font-family: 'Syncopate', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    position: left;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p {
+    margin: 0 0 10px;
+    color: white;
+}
+
+td, th {
+    padding: 0;
+    color: white;
+}
+
+.fa {
+  
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+
+  color: white;
+  font-size: px;
+  align-content: right;
+
+}
+
+/* Twitter */
+.fa-twitter {
+
+  color: white;
+  font-size: px;
+  align-content: right;
+}
+
+.fa-spotify{
+	
+	color: white;
+  align-content: right;
+}
+
+.fa-instagram{
+	
+	color: white;
+  align-content: right;
+}
+
+
+
+
+
+
+

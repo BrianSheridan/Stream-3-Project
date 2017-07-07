@@ -11,11 +11,25 @@
     <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/static.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
     {% block head_js %}{% endblock %}
 </head>
 <body>
+
+
+    
 <div class="container">
    <div class="masthead">
+       <p> Contact: 01-6738979 Mobile: 0857069604</p>
+       <hr>
+       <h1><span class="fui-settings-16 muted">Brian's Guitar blog</br> and lessons</span></h1>
+       <ul class="nav navbar-nav navbar-right social">
+                <a href="https://www.facebook.com/HEROINERROR/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/heroinerror" class="fa fa-twitter"></a>
+                <a href="https://play.spotify.com/artist/4IO7JvHKiioBbPH6dRivOo?play=true&utm_source=open.spotify.com&utm_medium=open" class="fa fa-spotify"></a>
+                <a href="http://www.imgrum.org/user/_heroinerror/3207637495" class="fa fa-instagram"></a>
+            </ul>
        <ul class="nav nav-pills pull-right">
             <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
             <li><a href="{% url 'categories' %}"><i class="fa fa-cube"></i> Categories</a></li>
@@ -29,9 +43,8 @@
             {% endif %}
             <li><a href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
         </ul>
-       <h1><span class="fui-settings-16 muted">Brian's Guitar blog and lessons</span></h1>
    </div>
-   <hr>
+   
     {% if messages %}
         <div class="alert alert-success">
             <div class="messages">
