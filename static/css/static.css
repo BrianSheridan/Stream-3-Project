@@ -22,7 +22,7 @@ a {
 }
 
 p {
-    margin: 0 0 10px;
+    
     color: white;
 }
 
@@ -31,10 +31,7 @@ td, th {
     color: white;
 }
 
-.fa {
-  
 
-}
 
 /* Add a hover effect if you want */
 .fa:hover {
@@ -43,30 +40,56 @@ td, th {
 
 .fa-facebook {
 
-  color: white;
-  font-size: px;
-  align-content: right;
+ padding: 20px;
+ font-size: 20px;
+ width: 30px;
+ text-align: left;
+ margin-top: -100px;
+ left: -1030px;
+ position: relative;
 
 }
 
 /* Twitter */
 .fa-twitter {
 
-  color: white;
-  font-size: px;
-  align-content: right;
+ padding: 20px;
+  font-size: 20px;
+  width: 10px;
+  text-align: right;
+  text-decoration: none;
+  position: relative;
+  left: -1020px;
 }
 
-.fa-spotify{
-	
-	color: white;
-  align-content: right;
-}
+
 
 .fa-instagram{
-	
-	color: white;
-  align-content: right;
+	padding: 20px;
+  font-size: 20px;
+  width: 10px;
+  text-align: right;
+  text-decoration: none;
+  position: relative;
+  left: -1010px;
+  
+}
+
+.email{
+  color: white;
+  text-align: right;
+  margin-top: -30px;
+}
+
+.image1{
+  color: red;
+}
+
+h3, .h3 {
+    font-size: 44px;
+    font-family: 'Great Vibes', cursive;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
