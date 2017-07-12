@@ -1,5 +1,5 @@
 {% extends "base.html" %}
- 
+{% load gravatar %}
 {% block content %}
 <button class="btn btn-default" onclick="location.href='/blog/post/new/'">New Post</button>
     {% for post in posts %}
@@ -8,7 +8,7 @@
             <hr>
             <div class="col-md-2 col-sm-3 text-center">
                 <a class="story-img" href="#">
-                    <img src="http://placehold.it/100" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                    <img src="{% gravatar_url post.author.email %}" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
                 </a>
             </div>
             <div class="col-md-10 col-sm-9">

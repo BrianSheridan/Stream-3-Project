@@ -36,6 +36,8 @@
                 <a href="http://www.imgrum.org/user/_heroinerror/3207637495" class="fa fa-instagram"></a>
               </div>
             </ul>
+
+            
        
        <div class="nav nav-pills pull-right">
             <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
@@ -52,85 +54,27 @@
         </ul>
    </div>
    
-    {% if messages %}
-        <div class="alert alert-success">
-            <div class="messages">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
+   
+
+   <div class="container">
+       <div class="col-sm-12">
+        {% if messages %}
+            <div class="alert alert-success">
+                <div class="messages">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
             </div>
-        </div>
-    {% endif %}
+        {% endif %}
+       </div>
 
-
-
-    <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                {% block sidebar %}
-                {% endblock sidebar %}
-            </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-12 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <div class="content">
                 {% block content %}
                 {% endblock content%}
             </div>
         </div>
-    </div>
-
-   <hr>
-
-   <div class="container">
-        <div class="row">
-
-        
-          <div class="col-md-6">
-           <div class="About-header">
-            <h3>Proudly Endorsed by:</h3>
-            <div class="col-md-6">
-            <img class="image1" src=static/media/images/fender.jpg width="250" height="170" alt="no pic">
-          </div>
-
-          </div>
-        </div>
-        </div>
-        
-        <div class="row">
-        <div class="col-md-6">
-           <div class="About-header">
-            
-            <div class="col-md-6">
-            <img class="image1" src=static/media/images/gibson.jpg width="250" height="170" alt="no pic">
-          </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-           <div class="About-header">
-            
-            <div class="col-md-6">
-            <img class="image1" src=static/media/images/mesa.jpg width="250" height="170" alt="no pic">
-          </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-           <div class="About-header">
-            
-            <div class="col-md-6">
-            <img class="image1" src=static/media/images/ernie.jpg width="250" height="170" alt="no pic">
-          </div>
-
-          </div>
-        </div>
-      </div>
    </div>
    <hr>
    <div class="footer">
