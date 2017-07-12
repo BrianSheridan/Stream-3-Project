@@ -12,11 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/static.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'css/cart.css' %}">-->
     <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    
     {% block head_js %}{% endblock %}
 </head>
-<body>
+
 
 
     
@@ -29,22 +31,25 @@
        
        <hr>
        
+       
        <h1><span class="fui-settings-16 muted">Brian's Guitar blog</br> and lessons</span></h1><ul class="nav navbar-nav navbar-right social">
               <div id="social">
                 <a href="https://www.facebook.com/HEROINERROR/" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/heroinerror" class="fa fa-twitter"></a>
                 <a href="http://www.imgrum.org/user/_heroinerror/3207637495" class="fa fa-instagram"></a>
+
               </div>
             </ul>
+            
 
             
        
        <div class="nav nav-pills pull-right">
             <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="{% url 'categories' %}"><i class="fa fa-cube"></i> Categories</a></li>
+            <li><a href="{% url 'products' %}"><i class="fa fa-cube"></i> Store</a></li>
             <li><a href="/blog"><i class="fa fa-cube"></i> Blog</a></li>
             {% if user.is_authenticated %}
-                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
                 <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a></li>
             {%  else %}
                 <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a></li>

@@ -22,7 +22,6 @@ from django.views import static
 from .settings import MEDIA_ROOT
 from cart import urls as cart_urls
 from payments import urls as payments_urls
-from catagories import urls as catagories_urls
 from blog.views import im_home
 from blog import urls as blog_urls
 
@@ -31,11 +30,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', say_hello, name='index'),
     url(r'accounts/', include(accounts_urls)),
-    url(r'^products/', include(products_urls)),
+    url(r'^store/', include(products_urls)),
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
     url(r'^cart/', include(cart_urls)),
     url(r'^payments/', include(payments_urls)),
-    url(r'^categories/', include(catagories_urls)),
     url(r'^blog/', include(blog_urls)),
     
 ]

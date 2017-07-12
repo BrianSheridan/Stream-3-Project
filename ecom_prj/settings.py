@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django_gravatar',
     'cart',
     'payments',
-    'catagories',
     'blog',
     'disqus',
     'django.contrib.sites',

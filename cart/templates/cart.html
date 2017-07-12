@@ -4,6 +4,7 @@
 
 {% block head_js %}
     <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
     <script type="text/javascript">
         //<![CDATA[
         Stripe.publishableKey = '{{ publishable }}';
@@ -13,7 +14,7 @@
 {% endblock %}
 
 {% block content %}
-    <table class="table table-striped">
+    <table class="table">
         <thead>
         <tr>
             <th>Image</th>

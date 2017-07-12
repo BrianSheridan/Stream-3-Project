@@ -1,5 +1,5 @@
 body{
-    background-image: url("../../static/media/images/sg.jpg");
+    background-color: black;
     background-size: cover;
 }
 
@@ -19,11 +19,19 @@ a {
     text-decoration: none;
     position: left;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    left: -390px;
+    font-family: 'Syncopate', sans-serif;
 }
 
 p {
     
     color: white;
+}
+
+p3 {
+    color: white;
+    position: relative;
+    left: -225px;
 }
 
 td, th {
@@ -45,8 +53,9 @@ td, th {
  width: 30px;
  text-align: left;
  margin-top: -100px;
- left: -1030px;
+ left: -10px;
  position: relative;
+ 
 
 }
 
@@ -59,7 +68,7 @@ td, th {
   text-align: right;
   text-decoration: none;
   position: relative;
-  left: -1020px;
+  left: -10px;
 }
 
 
@@ -71,7 +80,7 @@ td, th {
   text-align: right;
   text-decoration: none;
   position: relative;
-  left: -1010px;
+  left: -10px;
   
 }
 
