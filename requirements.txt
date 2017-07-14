@@ -1,5 +1,6 @@
 api==0.0.3
 arrow==0.10.0
+boto==2.48.0
 certifi==2017.4.17
 chardet==3.0.4
 disqus==0.0.4
@@ -9,6 +10,7 @@ django-disqus==0.5
 django-forms-bootstrap==3.1.0
 django-gravatar==0.1.0
 django-gravatar2==1.4.0
+django-storages==1.6.3
 djangorestframework==3.6.3
 gunicorn==19.7.1
 idna==2.5
