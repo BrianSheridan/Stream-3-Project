@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Brian Guitar Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
@@ -34,9 +35,9 @@
        
        <h1><span class="fui-settings-16 muted">Brian's Guitar blog</br> and lessons</span></h1><ul class="nav navbar-nav navbar-right social">
               <div id="social">
-                <a href="https://www.facebook.com/HEROINERROR/" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/heroinerror" class="fa fa-twitter"></a>
-                <a href="http://www.imgrum.org/user/_heroinerror/3207637495" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/sheroice" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/sheroice" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/sheroice/" class="fa fa-instagram"></a>
 
               </div>
             </ul>
@@ -44,9 +45,21 @@
             
             
 
-            
-       
-       <div class="nav nav-pills pull-right">
+          
+     <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">   
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+       <div class="nav nav-pills">
+           <ul class="listnav">
             <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
             <li><a href="{% url 'products' %}"><i class="fa fa-cube"></i> Store</a></li>
             <li><a href="/blog"><i class="fa fa-cube"></i> Blog</a></li>
@@ -59,7 +72,9 @@
             {% endif %}
             <li><a href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
         </ul>
-   </div>
+       </div>
+    </div>
+    </nav>
    
 
    
@@ -88,7 +103,7 @@
    </div>
    <hr>
    <div class="footer">
-       <p>Made By Bootcampers and Django </p>
+       <p>Copyright @ Brian Sheridan</p>
    </div>
 </div>
 </body>

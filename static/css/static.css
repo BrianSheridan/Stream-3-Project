@@ -13,6 +13,21 @@ h1, .h1 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.listnav>li{
+    display: block;
+    margin: 10px;
+    
+}
+
+.listnav{
+    padding-left: 10px;
+}
+
+.navbar{
+    background: transparent;
+    border: none;
+}
+
 
 a {
     color: white;
@@ -119,7 +134,13 @@ img.image1{
 }
 
 
-
+@media screen and (min-width:768px) {
+    .listnav>li{
+    display: inline;
+    margin: 10px;
+    
+}
+}
 
 
 
