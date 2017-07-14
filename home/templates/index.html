@@ -1,6 +1,8 @@
-<body background="../../static/media/images/sg.jpg">
+<body style="background-image: url('{% static 'images/sg.jpg'%}')">
 
 {% extends 'base.html' %}
+
+{% load static from staticfiles %}
 
 {% block content %}
 
@@ -9,7 +11,7 @@
             <div class="About-header">
             <h2>Proudly Endorsed by:</h2>
             <div class="col-md-6">
-            <img class="image1" src="/static/media/images/fender.jpg" width="250" height="170" alt="no pic">
+            <img class="image1" src="{% static 'media/images/fender.jpg' %}" width="250" height="170" alt="no pic">
             </div>
             </div>
         </div>
@@ -20,7 +22,7 @@
             <div class="About-header">
             
             <div class="col-md-6">
-            <img class="image1" src="/static/media/images/gibson.jpg" width="250" height="170" alt="no pic">
+            <img class="image1" src="{% static 'media/images/gibson.jpg' %}" width="250" height="170" alt="no pic">
             </div>
 
             </div>
@@ -32,7 +34,7 @@
         <div class="About-header">
         
         <div class="col-md-6">
-        <img class="image1" src="/static/media/images/mesa.jpg" width="250" height="170" alt="no pic">
+        <img class="image1" src="{% static 'media/images/mesa.jpg' %}" width="250" height="170" alt="no pic">
         </div>
 
         </div>
@@ -44,7 +46,7 @@
         <div class="About-header">
         
         <div class="col-md-6">
-        <img class="image1" src="/static/media/images/ernie.jpg" width="250" height="170" alt="no pic">
+        <img class="image1" src="{% static 'media/images/ernie.jpg' %}" width="250" height="170" alt="no pic">
         </div>
 
         </div>
