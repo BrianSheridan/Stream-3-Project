@@ -259,6 +259,21 @@ was created and that was used to store all of my static and media files.
 To switch between running locally and deploying on Heroku I had to comment out my database code in my
 settings.py
 
+# Testing
+
+I carried out some tests in the accounts app to basically make sure all the information being used was validated correctly.
+Did this by activating my virtual enviorment in my project folder.
+
+From there you type the following:
+
+"python manage.py test accounts"
+
+this command test my registration form to see if it validates properly when the correct information is entered,
+also tests to see if the form fails if the passwords dont match and finally test the form to see if it fails
+when one password has not been entered.
+
+
+
 
 
 
